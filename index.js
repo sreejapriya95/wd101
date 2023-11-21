@@ -37,13 +37,16 @@ const displayEntries = () => {
         return <tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>;
     }).join("\n");
 
-    const table = `<table class="table-auto w-full"><tr>
-        <th class="px-4 py-2">Name</th>
-        <th class="px-4 py-2">Email</th>
-        <th class="px-4 py-2">Password</th>
-        <th class="px-4 py-2">DOB</th>
-        <th class="px-4 py-2">Accepted Terms?</th>
-    </tr>${tableEntries}</table>`;
+    const table = 
+        `<table class="table-auto w-full">
+            <tr>
+                <th class="px-4 py-2">Name</th>
+                <th class="px-4 py-2">Email</th>
+                <th class="px-4 py-2">Password</th>
+                <th class="px-4 py-2">DOB</th>
+                <th class="px-4 py-2">Accepted Terms?</th>
+            </tr>${tableEntries}
+        </table>`;
 
     let details = document.getElementById("user-entries");
     details.innerHTML = table;
