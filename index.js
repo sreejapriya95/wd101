@@ -3,9 +3,12 @@ email.addEventListener('input', () => validate(email));
 
 function validate(element) {
     if (element.validity.typeMismatch) {
-        element.setCustomValidity("The Email is not in the right format");
+        element.setCustomValidity("Email is invalid");
         element.reportValidity();
-    } else {
+        
+    }
+    else
+    {
         element.setCustomValidity('');
     }
 }
@@ -28,13 +31,13 @@ const displayEntries = () => {
     const entries = retrieveEntries();
 
     const tableEntries = entries.map((entry) => {
-        const nameCell = <td class='border px-4 py-2'> ${entry.name} </td>;
-        const emailCell = <td class='border px-4 py-2'> ${entry.email} </td>;
-        const passwordCell = <td class='border px-4 py-2'> ${entry.password} </td>;
-        const dobCell = <td class='border px-4 py-2'> ${entry.dob} </td>;
-        const acceptTermsCell = <td class='border px-4 py-2'> ${entry.acceptTermsandcond} </td>;
+        const NameCell = <td class='border px-4 py-2'> ${entry.name} </td>;
+        const EmailCell = <td class='border px-4 py-2'> ${entry.email} </td>;
+        const PasswordCell = <td class='border px-4 py-2'> ${entry.password} </td>;
+        const DobCell = <td class='border px-4 py-2'> ${entry.dob} </td>;
+        const AcceptTermsCell = <td class='border px-4 py-2'> ${entry.acceptTermsandcond} </td>;
 
-        return <tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>;
+        return <tr>${NameCell} ${EmailCell} ${PasswordCell} ${DobCell} ${AcceptTermsCell}</tr>;
     }).join("\n");
 
     const table = 
@@ -68,7 +71,7 @@ const saveUserForm = (event) => {
 
     // Check if the user's age is between 18 and 55
     if (age < 18 || age > 55) {
-        alert('Sorry, you must be between 18 and 55 years old to register.');
+        alert('Sry u must be between 18 and 55 years old to Register.');
         return;
     }
     
