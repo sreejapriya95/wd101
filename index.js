@@ -22,7 +22,7 @@ const retrieveEntries = () => {
     return entries;
 };
 
-let userEntries = retrieveEntries();
+let userEntrie = retrieveEntries();
 
 const displayEntries = () => {
     const entries = retrieveEntries();
@@ -77,9 +77,9 @@ const saveUserForm = (event) => {
         acceptTermsandcond,
     };
 
-    userEntries.push(entry);
+    userEntrie.push(entry);
 
-    localStorage.setItem('user-entries', JSON.stringify(userEntries));
+    localStorage.setItem('user-entries', JSON.stringify(userEntrie));
     
     displayEntries();
 };
