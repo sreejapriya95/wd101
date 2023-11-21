@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
 
-    <title>Registration Form</title>
+    <title> REGISTRATION FORM </title>
     <style>
         input#name:invalid:focus{
             border:1.5px solid red
@@ -23,15 +23,15 @@
 <div class="relative flex min-h-screen flex-col justify-center overflow-hidden py-7 bg-gray-100">
     <div class="relative bg-white px-6 pt-5 pb-5 shadow-xl ring-1 ring-gray-800/5 sm:mx-auto sm:mx-w-lg sm:rounded-lg sm:px-10">
         <div class="mx-auto max-w-md">
-            <h2 class="text-3xl text-center font-bold leading-tight">
-                Registration Form
-            </h2>
+            <h3 class="text-3xl text-center text-red-500 bg-black font-bold leading-tight">
+                REGISTRATION FORM
+            </h3>
             <form id="user-form">
                 <div class="divide-y divide-gray-400/50 space-y-6 py-8 text-base leading-7 text-gray-700">
 
                     <!-- name -->
-                    <label for="name" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">
-                        Name
+                    <label for="name" class="text-md w-40 inline-block  font-medium leading-5 text-gray-700">
+                        NAME
                     </label>
                     <input required type="text" id="name" name="name"
                            class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-3 md-5 text-base leading-6 placeholder-gray-500"
@@ -40,7 +40,7 @@
 
                     <!-- email -->
                     <label for="email" class="text-md w-40 inline-block font-medium leading text-gray-700">
-                        Email
+                        EMAIL
                     </label>
                     <input type="email" id="email" name="email"
                            class="bg-gray-200 inline-block rounded-lg shadow-md px-4 py-3 md-5 text-base leading-5 placeholder-gray-600"
@@ -49,7 +49,7 @@
 
                     <!-- password -->
                     <label for="password" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">
-                        Password
+                        PASSWORD
                     </label>
                     <input required type="password" id="password" name="password"
                            class="bg-gray-200 inline-block rounded-lg shadow-md px-4 py-3 md-5 text-base leading-5 placeholder-gray-600"
@@ -58,10 +58,10 @@
 
                     <!-- dob -->
                     <label for="dob" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">
-                        Date of Birth
+                        DATE OF BIRTH
                     </label>
                     <input type="date" id="dob" name="dob"
-                           class="bg-gray-200 inline-block rounded-lg shadow-md px-4 py-3 md-5 text-base leading-5 placeholder-gray-600"
+                           class="bg-gray-200 inline-block rounded-lg shadow-md px-9 py-3 md-5 text-base leading-5 placeholder-gray-600"
                            placeholder="Enter full name">
                     <br>
                     
@@ -73,7 +73,7 @@
                         <label for="acceptTerms">Accept Terms & Conditions</label>
     
                     </div>
-                    <button type="submit" class=" flex w-fit grid justify-self-center rounded-lg shadow-lg px-8 py-4 bg-green-500 text-white hover:bg-green-400 focus:outline-none ">Submit</button>
+                    <button type="submit" class=" flex w-fit  grid justify-self-center rounded-lg shadow-lg px-8 py-4 bg-pink-500 text-white hover:bg-pink-400 focus:outline-none ">Submit</button>
 
                 </div>
             </form>
@@ -81,7 +81,7 @@
     </div>
     <div class="relative bg-white px-7 mt-6 pt-11 pb-9 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
         <div class="mx-auto">
-            <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+            <h2 class="text-3xl text-center font-bold leading-tight">ENTRIES</h2>
             <div class="divide-y divide-gray-300/50 " id="user-entries"></div>
         </div>
     </div>
